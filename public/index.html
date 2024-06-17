@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concentrese</title>
+  <link rel="stylesheet" href="/Concentrese/public/assets/css/style.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div id="TimerForm">
+      <button id="startTimerButton">Iniciar Juego</button>
+      <button id="backTimerButton">Salir Juego</button>
+      <div id="timer">00:00</div>
+    </div>
+    <h1>Concentrese</h1>
+    <div class="navscores">
+      <div class="allscores" id="score">
+        <p>Aciertos: <span id="correctCount">0</span></p>
+        <p>Errores: <span id="errorCount">0</span></p>
+      </div>
+      <div class="allscores" id="accumulatedScores">
+        <p>Aciertos totales: <span id="totalCorrectCount">0</span></p>
+        <p>Errores totales: <span id="totalErrorCount">0</span></p>
+      </div>
+      <div class="allscores">
+        <p>Puntaje: <span id="totalscore">0</span></p>
+      </div>
+    </div>
+  </nav>
+  <div class="restBody">
+
+    <div id="content" class="content">
+      <section class="content_cards"></section>
+    </div>
+    <div id="player-info"  style="display: none;">
+      <h2>Información del Jugador</h2>
+      <form id="playerForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required>
+        <label for="grade">Grado:</label>
+        <input type="number" id="grade" name="grade" required>
+        <label for="school">Selecciona un colegio:</label>
+        <select id="school" name="school">
+        </select>
+        <button type="submit" id="submitButton">Enviar</button>
+      </form>
+      <script src="/Concentrese/public/assets/js/getSchool.js"></script>
+    </div>
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/Concentrese/public/assets/js/script.js"></script>
+</body>
+
+</html>
