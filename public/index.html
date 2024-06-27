@@ -11,20 +11,28 @@
 
 <body>
   <nav>
-    <div id="TimerForm">
-      <button id="startTimerButton">Iniciar Juego</button>
-      <button id="backTimerButton">Salir Juego</button>
-      <div id="timer">00:00</div>
+    <div class="fton">
+      <div class="otherGames">
+        <a href="">
+          <button class="columnsGame" data-hover="Columns game"></button></a>
+        <a href="">
+          <button class="operationsGame" data-hover="Operations game"></button></a>
+      </div>
+      <div id="TimerForm">
+        <button id="startTimerButton">Iniciar Juego</button>
+        <button id="backTimerButton">Salir Juego</button>
+        <div id="timer">00:00</div>
+      </div>
     </div>
     <h1>Concentrese</h1>
     <div class="navscores">
-      <div class="allscores" id="score">
+      <div class="allscores" id="score" style="display: none;">
         <p>Aciertos: <span id="correctCount">0</span></p>
         <p>Errores: <span id="errorCount">0</span></p>
       </div>
       <div class="allscores" id="accumulatedScores">
-        <p>Aciertos totales: <span id="totalCorrectCount">0</span></p>
-        <p>Errores totales: <span id="totalErrorCount">0</span></p>
+        <p>Aciertos: <span id="totalCorrectCount">0</span></p>
+        <p>Errores: <span id="totalErrorCount">0</span></p>
       </div>
       <div class="allscores">
         <p>Puntaje: <span id="totalscore">0</span></p>

@@ -44,6 +44,40 @@ nav button:hover {
     color: #F26457;
 }
 
+.fton{
+    display: flex;
+    align-items: center;
+}
+
+.otherGames {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.columnsGame:hover::after, .operationsGame:hover::after{
+    content: attr(data-hover);
+    background-color: #273a73;
+    color: white;
+    border: solid white;
+    border-radius: 20px;
+    position: absolute; 
+}
+
+.columnsGame {
+    background: url('/Concentrese/public/assets/img/columnsgameicon.jpg') no-repeat;
+    width: 20px; 
+    height: 40px; 
+    border: none;  
+}
+
+.operationsGame {
+    background: url('/Concentrese/public/assets/img/opertionsgameicon.jpg') no-repeat;
+    width: 20px; 
+    height: 40px;
+    border: none; 
+}
+
 .content {
     height: 100%;
     display: flex;
